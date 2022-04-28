@@ -1,0 +1,32 @@
+.path {
+  stroke-dasharray: 10;
+  animation: dash 55s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 800;
+  }
+}
+
+.flying {
+  transform: translate(35%, 8%);
+  animation: fly 4s ease-in-out infinite;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(35%, 10%);
+  }
+  50% {
+    transform: translate(35%, 8%);
+  }
+  100% {
+    transform: translate(35%, 10%);
+  }
+}
+
+/* .svg:not(:root){
+  position: relative!important;
+  /* right: 10rem!important;
+} */ 
