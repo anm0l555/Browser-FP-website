@@ -1,6 +1,7 @@
 // make a function
 import React from "react";
 import Image1 from './images/hehe.png';
+import { Link } from "react-router-dom";
 import Animation from "./animation/animate";
 import "./index.css";
 function Index() {
@@ -8,10 +9,10 @@ function Index() {
     <div className="Index">
       {/* <h1>aK</h1> */}
       <nav>
-        <div className="nav-wrapper ">
-          <a href="#" className="brand-logo center">
+        <div className="nav-wrapper " id="navWrap2">
+          <Link to ="/" ><a  className="brand-logo center">
             Browser FP
-          </a>
+          </a></Link>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             {/* <li> */}
             {/* <a href="sass.html"></a> */}
@@ -42,9 +43,9 @@ function Index() {
           <br />
           <br />
           <br />
-          <a className="btn left" id="gmf-index">
+          <Link to ="/fingerprint"><a className="btn left" id="gmf-index">
             GET MY FINGERPRINT
-          </a>
+          </a></Link>
         </div>
         <div className="col s12 m12 l6 secondRowIndex left">
           {/* <Animation /> */}

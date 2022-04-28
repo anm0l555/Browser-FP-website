@@ -44,11 +44,16 @@
   -o-transform: translate(2em, 0);
   -ms-transform: translate(2em, 0);
 }
-.Index {
+.nav-wrapper {
   margin-top: 1%;
-  overflow-y: hidden !important;
+  /* overflow-y: hidden !important; */
+  padding-bottom: 80px;
+  border-bottom: #1d5d33 solid 2px;
 }
 
+#navWrap2{
+   
+}
 .gmf-cont {
   height: 89vh;
 }
@@ -113,4 +118,21 @@
     position: relative;
     right: 2rem;
     height: 600px;
+}
+
+
+/* Fingerprint Page */
+
+.fingerprintCont{
+    padding-left: 6rem;
+    padding-top: 2rem;
+    width: 100%;
+}
+#FingeprintTable,tr{
+    border: #1d5d33 2px solid;
+}
+
+.fingerprintBtn{
+    position: relative;
+    left: 25%;
 }
