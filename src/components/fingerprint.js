@@ -2,40 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
 import Gif from './images/xyz-unscreen.gif';
+import Navbar from "./navbar/Navbar";
 
 export default function Fingerprint() {
   return (
     <div className="Fingerprint">
       {/* <h1>Fingerprint</h1> */}
-      <nav>
-        <div className="nav-wrapper ">
-          <Link to="/">
-            <a href="#" className="brand-logo center">
-              Browser FP
-            </a>
-          </Link>
-          <ul id="nav-mobile" className="right hide-on-med-and-down">
-            {/* <li> */}
-            {/* <a href="sass.html"></a> */}
-            {/* </li> */}
-            <li>
-              <a id="navLinks" href="badges.html">
-                //01. &nbsp;&nbsp;ABOUT US
-              </a>
-            </li>
-            <li>
-              <a id="navLinks" href="badges.html">
-                //02. &nbsp;&nbsp;FINGERPRINT TABLES
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <Navbar />
       <div className="row fingerprintCont left">
         <div className="col s12 m12 l4 center">
-            <img src={Gif} className="responsive-img" alt="...loading"/>
+          <img src={Gif} className="responsive-img" alt="...loading" />
 
-            <Link to ="/fingerprint"><a className="btn left fingerprintBtn" id="gmf-index">
+          <Link to="/fingerprint"><a href="#!" className="btn left fingerprintBtn" id="gmf-index">
             GENERATE FINGERPRINT
           </a></Link>
         </div>
@@ -59,8 +37,8 @@ export default function Fingerprint() {
           <br />
 
 
-          <br/><br/><br/><br/>
-          
+          <br /><br /><br /><br />
+
           <table className="striped responsive-table  centered" id="FingeprintTable">
             <thead>
               <tr>
