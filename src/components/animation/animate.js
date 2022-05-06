@@ -7,9 +7,9 @@ export default function Animation() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
-        width="100%"
-        height="100%"
-        viewBox="0 0 1920.451 900"
+        width="150%"
+        height="170%"
+        viewBox="820 200 1920.451 900"
       >
         <defs>
           <linearGradient
@@ -830,7 +830,6 @@ export default function Animation() {
           id="Group_10114"
           data-name="Group 10114"
           transform="translate(2368 1384)"
-          
         >
           <rect
             id="Rectangle_1794"
@@ -845,7 +844,7 @@ export default function Animation() {
             data-name="Group 10109"
             transform="translate(-2368 -1384)"
           >
-              {/* <path
+            {/* <path
                 id="Path_1950"
                 data-name="Path 1950"
                 d="M278.705,885.416s-66.487-570.61,322.875-525.8S975.248,235.971,1161.6,147.728c0,0,238.656-124.974,475.252-39.159v776.85Z"

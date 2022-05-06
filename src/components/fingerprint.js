@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
-import Gif from './images/xyz-unscreen.gif';
+import Gif from "./images/xyz-unscreen.gif";
 
 export default function Fingerprint() {
   return (
@@ -19,25 +19,27 @@ export default function Fingerprint() {
             {/* <a href="sass.html"></a> */}
             {/* </li> */}
             <li>
-              <a id="navLinks" href="badges.html">
-                //01. &nbsp;&nbsp;ABOUT US
-              </a>
+              <Link to="/about">
+                <a id="navLinks">//01. &nbsp;&nbsp;ABOUT US</a>
+              </Link>
             </li>
             <li>
-              <a id="navLinks" href="badges.html">
-                //02. &nbsp;&nbsp;FINGERPRINT TABLES
-              </a>
+              <Link to="/fingerprint">
+                <a id="navLinks">//02. &nbsp;&nbsp;FINGERPRINT TABLES</a>
+              </Link>
             </li>
           </ul>
         </div>
       </nav>
       <div className="row fingerprintCont left">
         <div className="col s12 m12 l4 center">
-            <img src={Gif} className="responsive-img" alt="...loading"/>
+          <img src={Gif} className="responsive-img" alt="...loading" />
 
-            <Link to ="/fingerprint"><a className="btn left fingerprintBtn" id="gmf-index">
-            GENERATE FINGERPRINT
-          </a></Link>
+          <Link to="/fingerprint">
+            <a className="btn left fingerprintBtn" id="gmf-index">
+              GENERATE FINGERPRINT
+            </a>
+          </Link>
         </div>
         <div className="col s12 m12 l8">
           <h4 className="left"> Fingerprint Values</h4>
@@ -58,10 +60,15 @@ export default function Fingerprint() {
           </p>
           <br />
 
+          <br />
+          <br />
+          <br />
+          <br />
 
-          <br/><br/><br/><br/>
-          
-          <table className="striped responsive-table  centered" id="FingeprintTable">
+          <table
+            className="striped responsive-table  centered"
+            id="FingeprintTable"
+          >
             <thead>
               <tr>
                 <th>Feature</th>
@@ -78,19 +85,37 @@ export default function Fingerprint() {
 
             <tbody>
               <tr>
-                <td>Alvin</td>
-                <td>Eclair</td>
-                <td>$0.87</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
               </tr>
               <tr>
-                <td>Alan</td>
-                <td>Jellybean</td>
-                <td>$3.76</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
               </tr>
               <tr>
-                <td>Jonathan</td>
-                <td>Lollipop</td>
-                <td>$7.00</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
+                <td>{Math.random().toString(36).substr(2, 18)}</td>
               </tr>
             </tbody>
           </table>

@@ -1,6 +1,6 @@
 // make a function
 import React from "react";
-import Image1 from './images/hehe.png';
+import Image1 from "./images/hehe.png";
 import { Link } from "react-router-dom";
 import Animation from "./animation/animate";
 import "./index.css";
@@ -10,22 +10,24 @@ function Index() {
       {/* <h1>aK</h1> */}
       <nav>
         <div className="nav-wrapper " id="navWrap2">
-          <Link to ="/" ><a  className="brand-logo center">
-            Browser FP
-          </a></Link>
+          <Link to="/">
+            <a className="brand-logo center">Browser FP</a>
+          </Link>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             {/* <li> */}
             {/* <a href="sass.html"></a> */}
             {/* </li> */}
             <li>
-              <a id="navLinks" href="badges.html">
-                //01. &nbsp;&nbsp;ABOUT US
-              </a>
+              <Link to="/about">
+                <a id="navLinks">//01. &nbsp;&nbsp;ABOUT US</a>
+              </Link>
             </li>
             <li>
-              <a id="navLinks" href="badges.html">
-                //02. &nbsp;&nbsp;FINGERPRINT TABLES
-              </a>
+              <Link to="/fingerprint">
+                <a id="navLinks" href="#">
+                  //02. &nbsp;&nbsp;FINGERPRINT TABLES
+                </a>
+              </Link>
             </li>
             {/* <li>
               <a href="collapsible.html">JavaScript</a>
@@ -43,13 +45,15 @@ function Index() {
           <br />
           <br />
           <br />
-          <Link to ="/fingerprint"><a className="btn left" id="gmf-index">
-            GET MY FINGERPRINT
-          </a></Link>
+          <Link to="/fingerprint">
+            <a className="btn left" id="gmf-index">
+              GET MY FINGERPRINT
+            </a>
+          </Link>
         </div>
         <div className="col s12 m12 l6 secondRowIndex left">
-          {/* <Animation /> */}
-          <img src={Image1} className="center img-secrow" alt="image here" />
+          <Animation />
+          {/* <img src={Image1} className="center img-secrow" alt="image here" /> */}
         </div>
       </div>
     </div>
