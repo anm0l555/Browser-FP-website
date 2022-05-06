@@ -2,7 +2,7 @@
 import React from "react";
 import Image1 from "./images/hehe.png";
 import { Link } from "react-router-dom";
-import Animation from "./animation/animate";
+// import Animation from "./animation/animate";
 import "./index.css";
 function Index() {
   return (
@@ -11,7 +11,9 @@ function Index() {
       <nav>
         <div className="nav-wrapper " id="navWrap2">
           <Link to="/">
-            <a className="brand-logo center">Browser FP</a>
+            <a href="#!" className="brand-logo center">
+              Browser FP
+            </a>
           </Link>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             {/* <li> */}
@@ -46,14 +48,14 @@ function Index() {
           <br />
           <br />
           <Link to="/fingerprint">
-            <a className="btn left" id="gmf-index">
+            <a href="#!" className="btn left" id="gmf-index">
               GET MY FINGERPRINT
             </a>
           </Link>
         </div>
         <div className="col s12 m12 l6 secondRowIndex left">
-          <Animation />
-          {/* <img src={Image1} className="center img-secrow" alt="image here" /> */}
+          {/* <Animation /> */}
+          <img src={Image1} className="center img-secrow" alt="fingerprint" />
         </div>
       </div>
     </div>

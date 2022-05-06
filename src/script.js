@@ -1,7 +1,6 @@
-// import FingerprintJS from "../src/browser-fp/dist/src/index.js";
-import FingerprintJS from 'browser-fp';
+import FingerprintJS from './dist/src/index';
 
-export const UseFingerprint = () => {
+export const UseFingerprint = async () => {
   // Initialize the agent at application startup.
   let fpPromise;
   try {
@@ -11,6 +10,9 @@ export const UseFingerprint = () => {
   }
 
   // Get the visitor identifier when you need it.
+  // const fp = await fpPromise
+  // const result = await fp.get()
+  // console.log(result.visitorId)
 
   fpPromise
     .then((fp) => {
@@ -19,7 +21,9 @@ export const UseFingerprint = () => {
     })
     .then((result) => {
       // This is the visitor identifier:
+      console.log("Hello")
       const visitorId = result.visitorId;
-      console.log(visitorId);
+      console.log(result)
+      console.log("This is visitor id" + visitorId);
     });
 };
