@@ -167,6 +167,27 @@ tr {
   text-underline-offset: 4px;
 }
 
-p{
+p {
   font-size: 16px;
+}
+
+.Fingerprint {
+  overflow: hidden !important;
+}
+
+.fingeprintRowRight {
+  overflow-y: scroll;
+  height: 86vh;
+}
+
+.react-json-view {
+  text-align: left;
+}
+
+/* Loader */
+.Loader {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 13%;
 }

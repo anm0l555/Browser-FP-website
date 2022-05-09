@@ -3,8 +3,8 @@ import { React, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Index from "./components/index";
 import Fingerprint from "./components/fingerprint";
-import About from "./components/about";
-import { UseFingerprint } from "./script";
+import About from "./components/about/about";
+import UseFingerprint from "./script";
 
 function App() {
   useEffect(() => {
