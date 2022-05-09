@@ -56,9 +56,18 @@
 }
 
 .gmf-cont {
-  height: 89vh;
+  height: 82vh;
 }
 
+.SecondDivRowIndex{
+  padding-left: 4.5rem !important;
+}
+.SecondDivRowIndex img{
+  position: relative;
+  margin-top: -25rem!important;
+  height: 240px!important;
+  /* padding-top: 1; */
+}
 #gmf-index {
   position: relative;
   /* margin-left: 4%; */
@@ -105,14 +114,14 @@
 }
 
 .firstRowIndex {
-  padding-top: 6rem !important;
+  padding-top: 4rem !important;
   padding-left: 10rem !important;
   /* height: max-content; */
 }
 .secondRowIndex {
   /* z-index: -10000000; */
   color: transparent !important;
-  padding-top: 5rem !important;
+  padding-top: 3rem !important;
   /* height: max-content; */
   /* right: 15rem!important; */
 }
