@@ -30,7 +30,7 @@ function Index() {
               <br />
               <br />
               <Link to="/fingerprint">
-                <a href="#!" className="btn left" id="gmf-index">
+                <a href="#!"  className="btn left" id="gmf-index">
                   GET MY FINGERPRINT
                 </a>
               </Link>

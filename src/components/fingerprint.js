@@ -26,6 +26,7 @@ export default function Fingerprint() {
     console.log(res);
   };
 
+  
   return (
     <div className="Fingerprint">
       {loading ? (
@@ -38,7 +39,7 @@ export default function Fingerprint() {
               <img src={Gif} className="responsive-img" alt="...loading" />
 
               <Link to="/fingerprint">
-                <a href="#!" className="btn left fingerprintBtn" id="gmf-index">
+                <a href="#!" onClick={setLoading} className="btn left fingerprintBtn" id="gmf-index">
                   GENERATE FINGERPRINT
                 </a>
               </Link>
