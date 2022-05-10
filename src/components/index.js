@@ -1,6 +1,11 @@
 import { React, useState, useEffect } from "react";
 import Image1 from "./images/hehe.png";
 import CanvasFP from "./images/Fingerprints/cf.png";
+import AudioFP from "./images/Fingerprints/af.png";
+import WebGL from "./images/Fingerprints/webgl.png";
+import WebRTC from "./images/Fingerprints/webrtc.png";
+import Bua from "./images/Fingerprints/bua.png";
+import Mdf from "./images/Fingerprints/mdf.png";
 import { Link } from "react-router-dom";
 import Animation from "./animation/animate";
 import "./index.css";
@@ -46,42 +51,42 @@ function Index() {
             <div className="col s12 m4 l2">
               <img
                 src={CanvasFP}
-                className="responsive-img"
+                className="responsive-img SecondDivRowIndex-img"
                 alt="canvas Fingerprint"
               />
             </div>
             <div className="col s12 m4 l2">
               <img
-                src={CanvasFP}
-                className="responsive-img"
+                src={AudioFP}
+                className="responsive-img SecondDivRowIndex-img"
                 alt="canvas Fingerprint"
               />
             </div>
             <div className="col s12 m4 l2">
               <img
-                src={CanvasFP}
-                className="responsive-img"
+                src={WebGL}
+                className="responsive-img logoWebGL"
                 alt="canvas Fingerprint"
               />
             </div>
             <div className="col s12 m4 l2">
               <img
-                src={CanvasFP}
-                className="responsive-img"
+                src={WebRTC}
+                className="responsive-img logoWebRTC"
                 alt="canvas Fingerprint"
               />
             </div>
             <div className="col s12 m4 l2">
               <img
-                src={CanvasFP}
-                className="responsive-img"
+                src={Bua}
+                className="responsive-img logoBua"
                 alt="canvas Fingerprint"
               />
             </div>
             <div className="col s12 m4 l2">
               <img
-                src={CanvasFP}
-                className="responsive-img"
+                src={Mdf}
+                className="responsive-img logoMdf"
                 alt="canvas Fingerprint"
               />
             </div>

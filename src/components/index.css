@@ -56,18 +56,49 @@
 }
 
 .gmf-cont {
-  height: 82vh;
+  height: 81vh;
+  z-index: +1;
 }
 
 .SecondDivRowIndex{
-  padding-left: 4.5rem !important;
+    padding-left: 4.5rem !important;
+    padding-right: 4.5rem !important;
+    margin-bottom: 0!important;
+    z-index: -1;
 }
-.SecondDivRowIndex img{
+.SecondDivRowIndex-img{
   position: relative;
-  margin-top: -25rem!important;
+  margin-top: -12rem!important;
   height: 240px!important;
+  z-index: 0;
   /* padding-top: 1; */
 }
+.logoWebGL{
+  height: 145px!important;
+  position: relative;
+  margin-top:-12rem!important ;
+  z-index: 0;
+}
+.logoWebRTC{
+  height: 240px!important;
+  position: relative;
+  margin-top:-11rem!important ;
+  z-index: 0;
+}
+.logoBua{
+  height: 240px!important;
+  position: relative;
+  margin-top:-11rem!important ;
+  z-index: 0;
+}
+.logoMdf{
+  height: 240px!important;
+  position: relative;
+  margin-top:-11rem!important ;
+  z-index: 0;
+}
+
+
 #gmf-index {
   position: relative;
   /* margin-left: 4%; */
@@ -78,6 +109,7 @@
   border-radius: 10px;
   height: auto;
   font-size: large;
+  z-index: 10000;
   /* border-radius: 5px; */
   /* font-weight: bold;
   transition: all 0.5s ease-in-out;
