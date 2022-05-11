@@ -1,7 +1,9 @@
-"use strict";
+// "use strict";
 /*
  * Taken from https://github.com/karanlyons/murmurHash3.js/blob/a33d0723127e2e5415056c455f8aed2451ace208/murmurHash3.js
  */
+
+
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.x64hash128 = void 0;
 //

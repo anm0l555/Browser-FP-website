@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isAndroid = exports.exitFullscreen = exports.getFullscreenElement = exports.isIPad = exports.isWebKit606OrNewer = exports.isChromium86OrNewer = exports.isGecko = exports.isDesktopSafari = exports.isWebKit = exports.isChromium = exports.isEdgeHTML = exports.isTrident = void 0;
 const data_1 = require("./data");

@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 // import { CanvasFingerprint } from '../types'
 Object.defineProperty(exports, "__esModule", { value: true });
 // https://www.browserleaks.com/canvas#how-does-it-work

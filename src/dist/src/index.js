@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.loadSources = exports.isDesktopSafari = exports.isGecko = exports.isWebKit = exports.isChromium = exports.isEdgeHTML = exports.isTrident = exports.isAndroid = exports.getFullscreenElement = exports.getScreenFrame = exports.sources = exports.prepareForSources = exports.murmurX64Hash128 = exports.componentsToDebugString = exports.hashComponents = exports.load = void 0;
 const agent_1 = require("./agent");

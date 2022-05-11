@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.commentTemplate = void 0;
 const data_1 = require("./utils/data");

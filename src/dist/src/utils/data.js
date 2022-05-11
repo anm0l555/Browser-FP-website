@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 /*
  * This file contains functions to work with pure data only (no browser features, DOM, side effects, etc).
  */
