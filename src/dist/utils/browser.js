@@ -151,7 +151,7 @@ export function isIPad() {
     if (navigator.platform === 'iPad') {
         return true;
     }
-    const s = window.screen;
+    const s = screen;
     const screenRatio = s.width / s.height;
     return (countTruthy([
         'MediaSource' in window,

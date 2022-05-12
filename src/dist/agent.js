@@ -1,9 +1,3 @@
-import packageInfo from '../package.json';
-import { requestIdleCallbackIfAvailable } from './utils/async';
-import { x64hash128 } from './utils/hashing';
-import { errorToObject } from './utils/misc';
-import loadBuiltinSources from './sources';
-import getConfidence from './confidence';
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -13,6 +7,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+import { version } from '../package.json';
+import { requestIdleCallbackIfAvailable } from './utils/async';
+import { x64hash128 } from './utils/hashing';
+import { errorToObject } from './utils/misc';
+import loadBuiltinSources from './sources';
+import getConfidence from './confidence';
 function componentsToCanonicalString(components) {
     let result = '';
     for (const componentKey of Object.keys(components).sort()) {
@@ -54,7 +54,7 @@ function makeLazyGetResult(components) {
         },
         confidence,
         components,
-        version:packageInfo.version,
+        version,
     };
 }
 /**
@@ -110,7 +110,7 @@ function monitor() {
     }
     try {
         const request = new XMLHttpRequest();
-        request.open('get', `https://m1.openfpcdn.io/fingerprintjs/v${packageInfo.version}/npm-monitoring`, true);
+        request.open('get', `https://m1.openfpcdn.io/fingerprintjs/v${version}/npm-monitoring`, true);
         request.send();
     }
     catch (error) {
