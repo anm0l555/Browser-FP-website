@@ -8,7 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-Object.defineProperty(exports, "__esModule", { value: true });
+// Object.defineProperty(exports, "__esModule", { value: true });
 exports.getRoundedScreenFrame = exports.getScreenFrame = exports.hasScreenFrameBackup = exports.resetScreenFrameWatch = exports.screenFrameCheckInterval = void 0;
 const data_1 = require("../utils/data");
 const browser_1 = require("../utils/browser");
