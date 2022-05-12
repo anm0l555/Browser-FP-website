@@ -69,7 +69,7 @@ export default function Fingerprint() {
               <br />
 
               <table
-                className="striped responsive-table  centered"
+                className="responsive-table centered"
                 id="FingeprintTable"
               >
                 <thead>

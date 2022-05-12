@@ -169,6 +169,7 @@
 .fingerprintCont {
   padding-left: 6rem;
   padding-top: 2rem;
+  margin-bottom: 0!important;
   width: 100%;
 }
 #FingeprintTable,
@@ -218,7 +219,13 @@ p {
 
 .fingeprintRowRight {
   overflow-y: scroll;
-  height: 86vh;
+  scrollbar-width: ;
+  height: 88.3vh;
+}
+/* Giving Scrollbar Width  */
+::-webkit-scrollbar {
+  width: 8px!important;   
+ 
 }
 
 .react-json-view {
