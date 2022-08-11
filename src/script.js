@@ -1,5 +1,5 @@
-import FingerprintJS from './dist/src/index';
-
+import FingerprintJS from './dist2/fp.cjs.js';
+// import FingerprintJS from 'dist/src/index.js';
 const UseFingerprint = async () => {
   // Initialize the agent at application startup.
   let fpPromise;
@@ -13,6 +13,7 @@ const UseFingerprint = async () => {
   const fp = await fpPromise;
   const result = await fp.get();
   console.log(result.visitorId);
+  console.log(fp);
   return result;
   // fpPromise
   //   .then((fp) => {
