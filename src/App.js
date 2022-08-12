@@ -16,8 +16,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route exact path="/" element={<Index />} />
-        <Route path="fingerprint" element={<Fingerprint />} />
-        <Route path="about" element={<About />} />
+        <Route path="/fingerprint" element={<Fingerprint />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );
