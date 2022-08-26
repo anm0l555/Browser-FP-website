@@ -6,11 +6,7 @@
  * MurmurHash3 by Karan Lyons (https://github.com/karanlyons/murmurHash3.js)
  */
 
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-var tslib = require('tslib');
+import { __awaiter, __generator, __assign, __spreadArrays } from 'tslib';
 
 var version = "3.3.3";
 
@@ -67,9 +63,9 @@ function awaitIfAsync(action, callback) {
  */
 function forEachWithBreaks(items, callback, loopReleaseInterval) {
     if (loopReleaseInterval === void 0) { loopReleaseInterval = 16; }
-    return tslib.__awaiter(this, void 0, void 0, function () {
+    return __awaiter(this, void 0, void 0, function () {
         var lastLoopReleaseTime, i, now;
-        return tslib.__generator(this, function (_a) {
+        return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     lastLoopReleaseTime = Date.now();
@@ -334,7 +330,7 @@ function x64hash128(key, seed) {
  */
 function errorToObject(error) {
     var _a;
-    return tslib.__assign({ name: error.name, message: error.message, stack: (_a = error.stack) === null || _a === void 0 ? void 0 : _a.split('\n') }, error);
+    return __assign({ name: error.name, message: error.message, stack: (_a = error.stack) === null || _a === void 0 ? void 0 : _a.split('\n') }, error);
 }
 
 /*
@@ -509,9 +505,9 @@ function loadSources(sources, sourceOptions, excludeSources) {
         sourceGetters[index] = loadSource(sources[sourceKey], sourceOptions);
     });
     return function getComponents() {
-        return tslib.__awaiter(this, void 0, void 0, function () {
+        return __awaiter(this, void 0, void 0, function () {
             var components, _i, includedSources_1, sourceKey, componentPromises, _loop_1, state_1;
-            return tslib.__generator(this, function (_a) {
+            return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         components = {};
@@ -522,7 +518,7 @@ function loadSources(sources, sourceOptions, excludeSources) {
                         componentPromises = Array(includedSources.length);
                         _loop_1 = function () {
                             var hasAllComponentPromises;
-                            return tslib.__generator(this, function (_a) {
+                            return __generator(this, function (_a) {
                                 switch (_a.label) {
                                     case 0:
                                         hasAllComponentPromises = true;
@@ -719,7 +715,7 @@ function isIPad() {
     if (navigator.platform === 'iPad') {
         return true;
     }
-    var s = window.window.screen;
+    var s = screen;
     var screenRatio = s.width / s.height;
     return (countTruthy([
         'MediaSource' in window,
@@ -908,9 +904,9 @@ function makeInnerError(name) {
 function withIframe(action, initialHtml, domPollInterval) {
     var _a, _b, _c;
     if (domPollInterval === void 0) { domPollInterval = 50; }
-    return tslib.__awaiter(this, void 0, void 0, function () {
+    return __awaiter(this, void 0, void 0, function () {
         var d, iframe;
-        return tslib.__generator(this, function (_d) {
+        return __generator(this, function (_d) {
             switch (_d.label) {
                 case 0:
                     d = document;
@@ -1350,7 +1346,7 @@ function getDeviceMemory() {
 }
 
 function getScreenResolution() {
-    var s = window.window.screen;
+    var s = screen;
     // Some browsers return screen resolution as strings, e.g. "1200", instead of a number, e.g. 1200.
     // I suspect it's done by certain plugins that randomize browser properties to prevent fingerprinting.
     // Some browsers even return  screen resolution as not numbers.
@@ -1391,15 +1387,15 @@ function watchScreenFrame() {
 function getScreenFrame() {
     var _this = this;
     watchScreenFrame();
-    return function () { return tslib.__awaiter(_this, void 0, void 0, function () {
+    return function () { return __awaiter(_this, void 0, void 0, function () {
         var frameSize;
-        return tslib.__generator(this, function (_a) {
+        return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     frameSize = getCurrentScreenFrame();
                     if (!isFrameSizeNull(frameSize)) return [3 /*break*/, 2];
                     if (screenFrameBackup) {
-                        return [2 /*return*/, tslib.__spreadArrays(screenFrameBackup)];
+                        return [2 /*return*/, __spreadArrays(screenFrameBackup)];
                     }
                     if (!getFullscreenElement()) return [3 /*break*/, 2];
                     // Some browsers set the screen frame to zero when programmatic fullscreen is on.
@@ -1429,9 +1425,9 @@ function getScreenFrame() {
 function getRoundedScreenFrame() {
     var _this = this;
     var screenFrameGetter = getScreenFrame();
-    return function () { return tslib.__awaiter(_this, void 0, void 0, function () {
+    return function () { return __awaiter(_this, void 0, void 0, function () {
         var frameSize, processSize;
-        return tslib.__generator(this, function (_a) {
+        return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0: return [4 /*yield*/, screenFrameGetter()];
                 case 1:
@@ -1445,7 +1441,7 @@ function getRoundedScreenFrame() {
     }); };
 }
 function getCurrentScreenFrame() {
-    var s = window.screen;
+    var s = screen;
     // Some browsers return screen resolution as strings, e.g. "1200", instead of a number, e.g. 1200.
     // I suspect it's done by certain plugins that randomize browser properties to prevent fingerprinting.
     //
@@ -1893,10 +1889,10 @@ var filters = {
  */
 function getDomBlockers(_a) {
     var debug = (_a === void 0 ? {} : _a).debug;
-    return tslib.__awaiter(this, void 0, void 0, function () {
+    return __awaiter(this, void 0, void 0, function () {
         var filterNames, allSelectors, blockedSelectors, activeBlockers;
         var _b;
-        return tslib.__generator(this, function (_c) {
+        return __generator(this, function (_c) {
             switch (_c.label) {
                 case 0:
                     if (!isApplicable()) {
@@ -1927,9 +1923,9 @@ function isApplicable() {
 }
 function getBlockedSelectors(selectors) {
     var _a;
-    return tslib.__awaiter(this, void 0, void 0, function () {
+    return __awaiter(this, void 0, void 0, function () {
         var d, root, elements, blockedSelectors, i, element, holder, i;
-        return tslib.__generator(this, function (_b) {
+        return __generator(this, function (_b) {
             switch (_b.label) {
                 case 0:
                     d = document;
@@ -2317,7 +2313,7 @@ function withNaturalFonts(action, containerWidthPx) {
         }
         // See the big comment above
         var linesOfText = iframeDocument.createElement('div');
-        linesOfText.textContent = tslib.__spreadArrays(Array((containerWidthPx / 20) << 0)).map(function () { return 'word'; }).join(' ');
+        linesOfText.textContent = __spreadArrays(Array((containerWidthPx / 20) << 0)).map(function () { return 'word'; }).join(' ');
         iframeBody.appendChild(linesOfText);
         return action(iframeDocument, iframeBody);
     }, '<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1">');
@@ -2484,9 +2480,9 @@ function makeAgent(getComponents, debug) {
     var creationTime = Date.now();
     return {
         get: function (options) {
-            return tslib.__awaiter(this, void 0, void 0, function () {
+            return __awaiter(this, void 0, void 0, function () {
                 var startTime, components, result;
-                return tslib.__generator(this, function (_a) {
+                return __generator(this, function (_a) {
                     switch (_a.label) {
                         case 0:
                             startTime = Date.now();
@@ -2530,9 +2526,9 @@ function monitor() {
  */
 function load(_a) {
     var _b = _a === void 0 ? {} : _a, delayFallback = _b.delayFallback, debug = _b.debug, _c = _b.monitoring, monitoring = _c === void 0 ? true : _c;
-    return tslib.__awaiter(this, void 0, void 0, function () {
+    return __awaiter(this, void 0, void 0, function () {
         var getComponents;
-        return tslib.__generator(this, function (_d) {
+        return __generator(this, function (_d) {
             switch (_d.label) {
                 case 0:
                     if (monitoring) {
@@ -2555,20 +2551,5 @@ var index = { load: load, hashComponents: hashComponents, componentsToDebugStrin
 /** Not documented, out of Semantic Versioning, usage is at your own risk */
 var murmurX64Hash128 = x64hash128;
 
-exports.componentsToDebugString = componentsToDebugString;
-exports.default = index;
-exports.getFullscreenElement = getFullscreenElement;
-exports.getScreenFrame = getScreenFrame;
-exports.hashComponents = hashComponents;
-exports.isAndroid = isAndroid;
-exports.isChromium = isChromium;
-exports.isDesktopSafari = isDesktopSafari;
-exports.isEdgeHTML = isEdgeHTML;
-exports.isGecko = isGecko;
-exports.isTrident = isTrident;
-exports.isWebKit = isWebKit;
-exports.load = load;
-exports.loadSources = loadSources;
-exports.murmurX64Hash128 = murmurX64Hash128;
-exports.prepareForSources = prepareForSources;
-exports.sources = sources;
+export default index;
+export { componentsToDebugString, getFullscreenElement, getScreenFrame, hashComponents, isAndroid, isChromium, isDesktopSafari, isEdgeHTML, isGecko, isTrident, isWebKit, load, loadSources, murmurX64Hash128, prepareForSources, sources };

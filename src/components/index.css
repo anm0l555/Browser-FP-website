@@ -260,7 +260,7 @@ p {
 
 .fingeprintRowRight {
   overflow-y: scroll;
-  scrollbar-width: ;
+  /* scrollbar-width: ; */
   height: 88.3vh;
 }
 /* Giving Scrollbar Width  */
