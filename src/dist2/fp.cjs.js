@@ -1,11 +1,3 @@
-/**
- * FingerprintJS v3.3.3 - Copyright (c) FingerprintJS, Inc, 2022 (https://fingerprint.com)
- * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
- * 
- * This software contains code from open-source projects:
- * MurmurHash3 by Karan Lyons (https://github.com/karanlyons/murmurHash3.js)
- */
-
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
@@ -21,9 +13,7 @@ function requestIdleCallbackIfAvailable(fallbackTimeout, deadlineTimeout) {
     if (deadlineTimeout === void 0) { deadlineTimeout = Infinity; }
     var requestIdleCallback = window.requestIdleCallback;
     if (requestIdleCallback) {
-        // The function `requestIdleCallback` loses the binding to `window` here.
-        // `globalThis` isn't always equal `window` (see https://github.com/fingerprintjs/fingerprintjs/issues/683).
-        // Therefore, an error can occur. `call(window,` prevents the error.
+       
         return new Promise(function (resolve) { return requestIdleCallback.call(window, function () { return resolve(); }, { timeout: deadlineTimeout }); });
     }
     else {
