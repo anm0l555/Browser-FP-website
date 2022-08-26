@@ -39,7 +39,7 @@ export default function Fingerprint() {
               <img src={Gif} className="responsive-img" alt="...loading" />
 
               <Link to="/fingerprint">
-                <a href="#!" onClick={setLoading} className="btn left fingerprintBtn" id="gmf-index">
+                <a href="#!" onClick={setLoading} className="btn  fingerprintBtn" id="gmf-index2">
                   GENERATE FINGERPRINT
                 </a>
               </Link>
