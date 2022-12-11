@@ -36,4 +36,3 @@ As depicted by our project title, our ultimate aim is to increase the confidence
 1. By implementing more and more fingerprinting methods like Canvas fingerprinting, audio fingerprinting, WebGL fingerprinting, WebRTC fingerprinting, etc., in the browsers.
 2. Deriving a solution to prevent browsers like safari, brave, etc., from preventing browser fingerprinting(decreasing confidence score, which results in failure of browser fingerprinting).
 3. By implementing invisible trackers and tracking ads in browsers, which cannot be blocked partially by the extensions already blocking some of them, thus giving us the chances to increase confidence score.
-4. Making an ML bot that detects which fingerprinting methods a particular browser is using and which all is missing. Then, notifying how to fix the missing one after implementing some more features to the fingerprinting process already implemented in that browser, thus increasing the confidence score
