@@ -8,6 +8,10 @@ We generated a website, in which we tried to show the fingerprint of the user wh
 This project will track users uniquely irrespective of 3rd party cookies and many other things which are blocking us to get the fingerprint of a user uniquely. In this Project, we have shown the fingerprint score of user online, calculating fingerprint confidence score, calculating browser fingerprint value, plugins installed on your laptop, your fonts and calculating various fingerprint values like audio fingeprrint, canvas fingerprint, webRTC, etc.
 Till now, we have achieved an acuracy score of 0.83(by implementing various fingerprinting techniques) to which users can be tracked down accurately and we are planning to increase the confidence score(the accuracy score about which more is explained below down in the paragraph) more upto 99.99%. 
 
+## 3. Input/Output
+Input is different user's web browser's specifications values and ouput is generating fingerprint value and confidence score by hashing the values of various fingerprint values for better accuracy, and also, output will be database storing user's fingerprint value and confidence score.
+Also, updating value of confidence score each time, whenecer a higher accuracy is achieved.
+
 ## 4. Live Link
 Link: https://browser-fp.netlify.app
 
