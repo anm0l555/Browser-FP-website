@@ -1,7 +1,6 @@
 # Identifying users online and Calculating Accuracy of Browser fingerprint calculated(Increasing Confidence Score of Browser Fingerprint)
 ## 1. Methodology
-![image](https://user-images.githubusercontent.com/54709833/208247226-9323301a-1819-48cc-afca-4b228b3f3548.png)
-
+![mehtodology](https://user-images.githubusercontent.com/54709833/208247286-d0bea5c1-a9a0-44d8-a867-d9b775beb6d4.png)
 
 ## 2. Description
 We generated a website, in which we tried to show the fingerprint of the user who is surfing the internet using browser fonts, plugins installed, your ram size, hard disk size, etc and to how unique the user is being identified on internet, which nowadays third party cookies are blocking them for user's privacy due to which user's who do fraud are unable to get tracked down easily.
